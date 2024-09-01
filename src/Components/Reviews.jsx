@@ -30,7 +30,7 @@ export const Reviews = () => {
       <button className="prev-btn" onClick={actived}>❮</button>
       <div id="reviews" className= {activedBox ? `moveleft ${activedLi}` : `moveright ${activedLi}`}>
         <section className="comment disappearMobile">
-          <img src="\images\avatar-anisha.png" alt="Anisha avatar" />
+          <img src="\avatar-anisha.png" alt="Anisha avatar" />
           <h4>Anisha Li</h4>
           <p>
             “Manage has supercharged our team’s workflow. The ability to
@@ -39,7 +39,7 @@ export const Reviews = () => {
           </p>
         </section>
         <section className="comment">
-          <img src="\images\avatar-ali.png" alt="Ali Bravo avatar" />
+          <img src="\avatar-ali.png" alt="Ali Bravo avatar" />
           <h4>Ali Bravo</h4>
           <p>
             “We have been able to cancel so many other subscriptions since using
@@ -48,7 +48,7 @@ export const Reviews = () => {
           </p>
         </section>
         <section className="comment disappearMobile">
-          <img src="\images\avatar-richard.png" alt="Richard avatar" />
+          <img src="\avatar-richard.png" alt="Richard avatar" />
           <h4>Richard Watts</h4>
           <p>
             “Manage allows us to provide structure and process. It keeps us
@@ -57,7 +57,7 @@ export const Reviews = () => {
           </p>
         </section>
         <section className="comment " >
-          <img src="\images\avatar-shanai.png" alt="Shara avatar" />
+          <img src="\avatar-shanai.png" alt="Shara avatar" />
           <h4>Shanai Gough</h4>
           <p>
             “Their software allows us to track, manage and collaborate on our

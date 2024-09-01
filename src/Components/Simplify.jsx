@@ -8,8 +8,8 @@ export const Simplify = () => {
           <h1 className="text-over-image">Simplify how your team works today.</h1>
         </div>
         <Button />
-        <img src="\images\bg-tablet-pattern copy.svg" alt="" id="tablePatternSimplify"/> 
-        <img src="\images\bg-tablet-pattern copy.svg" alt="" id="tablePatternSimplifyRight"/> 
+        <img src="\bg-tablet-pattern copy.svg" alt="" id="tablePatternSimplify"/> 
+        <img src="\bg-tablet-pattern copy.svg" alt="" id="tablePatternSimplifyRight"/> 
 
     </main>
     </>

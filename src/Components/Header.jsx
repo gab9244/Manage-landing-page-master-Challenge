@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <>
      <header>
-      <img src="\images\logo.svg" className = "Logo" alt="" />
+      <img src="\logo.svg" className = "Logo" alt="" />
       <div id="links">
           <a href="#LeftSide">Pricing</a>
           <a href="#leftSide">Product</a>
@@ -15,7 +15,7 @@ export const Header = () => {
       <HamburgeMenu />
 
     <Button />
-    <img src="\images\bg-tablet-pattern.svg" alt="" id="tablePattern"/>
+    <img src="\bg-tablet-pattern.svg" alt="" id="tablePattern"/>
     </header>
 
    

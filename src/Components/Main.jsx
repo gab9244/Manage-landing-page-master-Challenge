@@ -10,7 +10,7 @@ export const Main = () => {
             <Button />
         </section>
         <section>
-        <img src="\images\illustration-intro.svg" alt="" className="illustration"/>
+        <img src="\illustration-intro.svg" alt="" className="illustration"/>
         </section>
     </main>
   )

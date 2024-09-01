@@ -24,7 +24,7 @@ export const Contact = () => {
     <div id="contactDiv">
       <div className="leftIcons">
         <div>
-          <img src="\images\logo copy.svg" alt="" className="whiteLogo" />
+          <img src="\logo copy.svg" alt="" className="whiteLogo" />
         </div>
         <div id="socials">
           <FacebookIcon />
