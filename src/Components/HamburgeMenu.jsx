@@ -9,7 +9,7 @@ export const HamburgeMenu = () => {
     <div className="mobileMenu" >
       
         <img
-          src={ !show ? `/images/icon-hamburger.svg` : "/images/icon-close.svg"}
+          src={ !show ? `/icon-hamburger.svg` : "/icon-close.svg"}
           alt="A hamburger menu"
           className="mobile"
           onClick={ShowMenu}
