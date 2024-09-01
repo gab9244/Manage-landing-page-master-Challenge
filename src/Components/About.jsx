@@ -46,7 +46,7 @@ export const About = () => {
           </section>
        
       </section>
-      <img src="\images\bg-tablet-pattern.svg" alt="" id="tablePatternMiddle" />
+      <img src="\bg-tablet-pattern.svg" alt="" id="tablePatternMiddle" />
     </main>
   );
 };
