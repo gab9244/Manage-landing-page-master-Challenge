@@ -1,0 +1,71 @@
+:root {
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
+  --DarkGrayishBlue: hsl(227, 12%, 61%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+#simplifyMain {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 300px;
+  background-color: hsl(12, 84%, 52%);
+  font-size: 20px;
+  padding: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.overlay-element {
+  position: relative;
+  width: 35%;
+}
+#simplifyMain h1 {
+  color: var(--Very-Pale-Red);
+  position: relative;
+  z-index: 2;
+  color: var(--Very-Light-Gray); 
+  padding: 20px;
+}
+
+#simplifyMain button {
+  background-color: var(--Very-Light-Gray);
+  color: var(--Bright-Red);
+  position: relative;
+  z-index: 2;
+}
+
+#tablePatternSimplify {
+  position: absolute;
+  left: 14rem;
+  top: -1rem;
+}
+
+#tablePatternSimplifyRight {
+  position: absolute;
+  left: 80%;
+  bottom: 25%;
+}
+
+@media (max-width: 1200px) {
+  #simplifyMain {
+    flex-direction: column;
+  }
+  #simplifyMain h1 {
+    font-size: 3rem;
+  }
+  .overlay-element {
+    width: 90vw;
+    text-align: center;
+  }
+
+  #tablePatternSimplify {
+    left: -40rem;
+  }
+
+  #tablePatternSimplifyRight {
+    left: 100%;
+  }
+}

@@ -1,0 +1,142 @@
+:root {
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
+  --DarkGrayishBlue: hsl(227, 12%, 61%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+#review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  position: relative;
+  width: 100vw;
+}
+
+#reviewHeader {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 60px;
+  color: var(--Dark-Blue);
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+#reviews {
+  display: flex;
+  text-align: center;
+  margin-bottom: 100px;
+  gap: 20px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin-left: 9rem;
+}
+#reviews img {
+  width: 100px;
+}
+.comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--Very-Light-Gray);
+  box-sizing: border-box;
+  width: 33vw;
+}
+.comment p {
+  width: 70%;
+}
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  box-shadow: none;
+}
+
+.prev-btn {
+  left: 30px;
+}
+
+.next-btn {
+  right: 30px;
+}
+.moveleft {
+  transform: translateX(10%);
+}
+.moveright {
+  transform: translateX(-15%);
+}
+
+.disappear {
+  display: none;
+}
+.dots {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  #reviewHeader {
+    font-size: 20px;
+  }
+  .comment {
+    width: 100vw;
+  }
+  .comment p {
+    width: 81%;
+    line-height: 35px;
+    font-weight: 300;
+  }
+  .dots {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  .dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--Bright-Red);
+  }
+  .dots li:active {
+    background-color: var(--Bright-Red);
+  }
+
+  .prev-btn {
+    display: none;
+  }
+
+  .next-btn {
+    display: none;
+  }
+  .leftIcons {
+    margin-bottom: 8rem;
+  }
+  .Li1 {
+    transform: translateX(34%);
+  }
+  .Li2 {
+    transform: translateX(9%);
+  }
+  .Li3 {
+    transform: translateX(-16%);
+  }
+  .Li4 {
+    transform: translateX(-41.5%);
+  }
+  .LiActived {
+    background-color: var(--Bright-Red);
+  }
+}

@@ -1,0 +1,59 @@
+:root {
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
+  --DarkGrayishBlue: hsl(227, 12%, 61%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+.mobile {
+  cursor: pointer;
+  display: none;
+}
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Hamburgerlinks {
+    opacity: 0;
+}
+.disappear {
+    transition: all .3s ease;
+    opacity: 0;
+}
+@media (max-width: 1200px) {
+  .mobile {
+    display: inline;
+  }
+  .Hamburgerlinks {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: absolute;
+    top: 120px;
+    gap: 20px;
+    background-color: var(--Very-Light-Gray);
+    z-index: 1;
+    border-radius: 10px;
+    opacity: 1;
+    transition: all .3s ease;
+
+  }
+  .disappear {
+    opacity: 1;
+    transition: all .3s ease;
+
+  }
+  .Hamburgerlinks a {
+    color: var(--Dark-Blue);
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .Hamburgerlinks a:active {
+    opacity: 0.5;
+    color: var(--Dark-Blue);
+  }
+}

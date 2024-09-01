@@ -1,0 +1,164 @@
+:root {
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
+  --DarkGrayishBlue: hsl(227, 12%, 61%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Crimson: #DC143C;
+  --Sea-Green: #2E8B57;
+}
+
+#contactDiv {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--Very-Dark-Blue);
+  padding: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.leftIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+#socials {
+  display: flex;
+  gap: 15px;
+}
+#socials svg {
+  cursor: pointer;
+  color: var(--Very-Light-Gray);
+}
+
+#socials svg:hover {
+  color: var(--Bright-Red);
+}
+.middleContacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 200;
+  color: var(--Very-Light-Gray);
+  text-decoration: none;
+}
+.middleContacts a {
+  color: var(--Very-Light-Gray);
+  text-decoration: none;
+}
+
+.middleContacts a:hover {
+  color: var(--Bright-Red);
+}
+#rightContacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.GoButton {
+  border: none;
+  background-color: var(--Bright-Red);
+  color: var(--Very-Pale-Red);
+  font-size: 18px;
+  width: 70px;
+  height: 40px;
+  border-radius: 40px;
+  text-align: center;
+}
+
+input {
+  border: none;
+  background-color: var(--Very-Light-Gray);
+  font-size: 18px;
+  width: 250px;
+  height: 50px;
+  border-radius: 40px;
+  text-align: center;
+  margin-right: 10px;
+}
+.CopyrightText {
+  color: var(--DarkGrayishBlue);
+  margin-top: 100px;
+  margin-left: 80px;
+}
+
+.ContactsLinks {
+  display: flex;
+  gap: 20vw ;
+}
+.Valid{
+  color: var(--Sea-Green) ;
+  border: 2px solid var(--Sea-Green) ;
+
+}
+.Invalid{
+  color: var(--Crimson) ;
+  border: 2px solid var(--Crimson) ;
+
+
+}
+
+.InvalidEmail {
+  color: var(--Crimson);
+  margin: 20px;
+  opacity: 1;
+}
+.Valided {
+  opacity: -1;
+
+}
+@media (max-width: 1200px) {
+  #contactDiv {
+    flex-direction: column-reverse;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .leftIcons {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 8rem;
+  }
+  #socials {
+    scale: 2;
+  }
+
+  .whiteLogo {
+    scale: 1.5;
+  }
+  .ContactsLinks {
+    margin: 40px;
+
+  }
+  .CopyrightText {
+    position: absolute;
+    top:75%;
+    margin-left: 50px;
+  }
+  .left {
+    width: 200px;
+  }
+  .right {
+    width: 50%;
+  }
+
+  .middleContacts {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  #rightContacts {
+    align-items: center;
+    padding: 40px;
+  }
+  input {
+    width:60vw;
+    height: 70px;
+  }
+  .GoButton {
+    width: 20vw;
+    height: 65px;
+    font-size: 22px;
+  }
+}

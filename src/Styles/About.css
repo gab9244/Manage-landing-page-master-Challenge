@@ -1,0 +1,136 @@
+:root {
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
+  --DarkGrayishBlue: hsl(227, 12%, 61%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+#aboutContent {
+  display: flex;
+  margin-top: 250px;
+  margin-left: 250px;
+  position: relative;
+
+}
+#leftSide {
+  width: 50%;
+  margin-right: 300px;
+}
+
+section h1 {
+  color: var(--Dark-Blue);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#rightBoxes {
+  display: flex;
+  flex-direction: column;
+}
+.rightSideHeader {
+  display: flex;
+}
+
+.rightSideIcon {
+  border: none;
+  background-color: var(--Bright-Red);
+  color: var(--Very-Pale-Red);
+  font-size: 18px;
+  width: 50px;
+  height: 25px;
+  border-radius: 40px;
+  text-align: center;
+  padding: 10px;
+  margin-right: 20px;
+  position: absolute;
+  right: 53%;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  width: 60%;
+}
+
+.rightSideGroup {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+section h3 {
+  color: var(--Dark-Blue);
+  margin-bottom: 30px;
+}
+
+section p {
+  color: var(--DarkGrayishBlue);
+}
+
+#tablePatternMiddle {
+  position: absolute;
+  z-index: -1;
+  right: 80vw;
+
+}
+
+@media (max-width:1200px) {
+  #aboutContent {
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin-left: 0px;
+    justify-items: center;
+
+
+  }
+  section h3 {
+    margin-bottom: 0;
+  }
+  section p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  #leftSide {
+    margin-right: 0px;
+    width: 100%;
+    
+  }
+  #leftSide h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+  #leftSide p {
+    text-align: center;
+
+  }
+  .rightSideHeader {
+    display: flex;
+    background-color:#FFF0EC;
+    width: 100vw;
+    padding-top: 0px;
+    margin-top: 50px;
+    align-items: center;
+    border-radius: 20px;
+}
+  
+.rightSideIcon {
+  position:sticky;
+}
+ .rightSide  {
+  display: flex;
+  width:90vw;
+ }
+ #tablePatternMiddle {
+  position: absolute;
+  z-index: -1;
+  bottom: 88%;
+  left: 43%;
+  scale: 80%;
+
+}
+}
+
+
+

@@ -1,0 +1,63 @@
+:root {
+    --Bright-Red: hsl(12, 88%, 59%);
+    --Dark-Blue: hsl(228, 39%, 23%);
+    --DarkGrayishBlue: hsl(227, 12%, 61%);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+#MainContent{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 250px;
+
+}
+
+#MainContent h1 {
+    color: var(--Dark-Blue);
+    font-size: 45px;
+    width: 50%;
+}
+#MainContent p {
+    width: 60%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    color: var(--DarkGrayishBlue);
+
+}
+#LeftSide {
+    width: 50%;
+}
+
+
+
+
+@media (max-width:1200px) {
+    #MainContent {
+      flex-direction: column-reverse;
+      margin-left: 0;
+      text-align: center;
+      margin-top: 0;
+
+    }
+    #MainContent h1 {
+        width: 100%;
+        font-size: 50px;
+    }
+    #MainContent p {
+        width:100%;
+        padding-top: 0;
+        font-size: 25px;
+    
+    }
+     #LeftSide {
+        width: 100%;
+     }
+     .illustration {
+        scale: 80%;
+
+     }
+  }
